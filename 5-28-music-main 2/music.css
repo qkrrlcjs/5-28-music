@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+.title{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.select{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.year{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+    flex-direction: column;
+    margin-left: 27px;
+    margin-right: 29px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    padding: 16px 20px;
+}
+.setting{
+    display: flex;
+    justify-content: space-between 15px;
+    flex-direction: row;
+    align-items: center;
+    /* 가로 스크롤 방법 알아오기~ */
+    width: 100vw;
+    overflow-x: scroll;
+}
+.setting li{
+    width: 100px;
+}
+.set{
+    display: flex;
+    border-radius: 20px;
+    background-color: #74A6F5;
+    width: 85px;
+    height: 38px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 28px;
+    margin-top: 20px;
+}
+.title2{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    margin: 35px 15px 0 0;
+}
+.songs{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.song1{
+    display: flex;
+    border: 1px solid #DBDBDB;
+    width: 100vw;
+    padding: 20px;
+}
+.img{
+    background-color: #EFEFEF;
+    width: 102px;
+    height: 103px;
+    border-radius: 12px;
+}
+.sn{
+    font-size: 22px;
+    margin-left: 18px;
+}
+.sm{
+    font-size: 18px;
+    margin-top: 13px;
+    display: flex;
+}
+.st{
+    font-size: 15px;
+    margin-top: 22px;
+}
+.link{
+    margin-left: 71px;
+    margin-top: 68px;
+}
