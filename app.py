@@ -6,7 +6,7 @@ app = Flask(__name__)
 def main():
     return render_template('main.html')
 
-@app.route('/submit',method=['POST'])
+@app.route('/submit',methods=['POST'])
 def submit():
     if request.method == 'POST':
         year = request.form.get('year')
