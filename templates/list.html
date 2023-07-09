@@ -9,19 +9,18 @@
         <h1>추억쏭</h1>
     </div>
     <div>
-        1990-1999년
+        {{year}}
     </div>
     <div>
-        발라드 노래 목록
+        {{genre}} 노래 목록
     </div>
 
-    <a href="main.html">다시 고르기<a>
+    <a href="/">다시 고르기<a>
     <p class="title2">총 10곡</p>
-    <div class="songs">
-        <div class="song1"><a class="img" href="alreadyyear.html"></a><div class="sn">벌써 일년<div class="sm">이적</div><div class="st">03:23</div></div><a class="link" href="https://www.youtube.com/watch?v=U89YuK4SD9E"><img src="C:\Users\user\Pictures\YT.png"></a></div>
-        <div class="song1"><a class="img" href="alreadyyear.html"></a><div class="sn">벌써 일년<div class="sm">이적</div><div class="st">03:23</div></div><a class="link" href="https://www.youtube.com/watch?v=U89YuK4SD9E"><img src="C:\Users\user\Pictures\YT.png"></a></div>
-        <div class="song1"><a class="img" href="alreadyyear.html"></a><div class="sn">벌써 일년<div class="sm">이적</div><div class="st">03:23</div></div><a class="link" href="https://www.youtube.com/watch?v=U89YuK4SD9E"><img src="C:\Users\user\Pictures\YT.png"></a></div>
-        <div class="song1"><a class="img" href="alreadyyear.html"></a><div class="sn">벌써 일년<div class="sm">이적</div><div class="st">03:23</div></div><a class="link" href="https://www.youtube.com/watch?v=U89YuK4SD9E"><img src="C:\Users\user\Pictures\YT.png"></a></div>
-    </div>
+    <ul class="songs">
+      {% for song in song_list %}
+      <li class="song1"><a class="img" href="/lyrics"></a><div class="sn">{{song['title']}}<div class="sm">{{song['singer']}}</div></div><a class="link" href="https://www.youtube.com/watch?v=U89YuK4SD9E"><img src="C:\Users\user\Pictures\YT.png"></a></li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
