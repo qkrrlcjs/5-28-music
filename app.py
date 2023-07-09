@@ -14,6 +14,7 @@ def submit():
         genre = request.form.get('genre')
         song_list = [{'title':'벌써','singer':'이적'},
                      {'title':'벌써2','singer':'이적2'},
+                     {'title':'사랑의 서약','singer':'한동준'},
                      ]
         if year and genre:
             return render_template('list.html', year=year, genre=genre, song_list=song_list)
